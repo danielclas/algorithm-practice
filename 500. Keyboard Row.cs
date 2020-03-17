@@ -11,14 +11,12 @@ public class Solution {
         foreach(string word in words){
             foreach(var row in rows.Values.ToList()){
                 if(Array.IndexOf(row,word[0])!=-1){
-                    bool contains = true;
-                    
+                    bool contains = true;                    
                     foreach(char c in word){
                         if(Array.IndexOf(row,c)==-1){
                             contains = false;
                         }
-                    }
-                    
+                    }                    
                     if(contains){
                         list.Add(word);
                     }
