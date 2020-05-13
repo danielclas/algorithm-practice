@@ -4,5 +4,4 @@ static void printLinkedList(SinglyLinkedListNode head) {
             Console.WriteLine(head.data);
             head=head.next;
         }
-
     }
