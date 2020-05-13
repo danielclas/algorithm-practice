@@ -10,5 +10,4 @@ static bool hasCycle(SinglyLinkedListNode head) {
         }
 
         return false;
-
     }
