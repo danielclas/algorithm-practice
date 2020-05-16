@@ -1,5 +1,5 @@
 echo off
-clear
+cls
 git add .
 git commit -m "Ejercicios"
 git push
