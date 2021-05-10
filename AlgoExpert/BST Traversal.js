@@ -11,7 +11,7 @@ function inOrderTraverse(tree, array) {
   function preOrderTraverse(tree, array) {
     array.push(tree.value);
       
-    if(tree.left)	preOrderTraverse(tree.left, array);
+    if(tree.left) preOrderTraverse(tree.left, array);
     if(tree.right) preOrderTraverse(tree.right, array); 
     
     return array;
