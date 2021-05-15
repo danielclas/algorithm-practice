@@ -1,3 +1,11 @@
+class BinaryTree {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
 function nodeDepths(root) {
   let arr = [0]; //1
     
@@ -40,14 +48,6 @@ function traverse(node, arr, depth){
  * 
  * /
 
-// This is the class of the input binary tree.
-class BinaryTree {
-  constructor(value) {
-    this.value = value;
-    this.left = null;
-    this.right = null;
-  }
-}
   
 
   

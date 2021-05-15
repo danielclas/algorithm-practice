@@ -23,8 +23,4 @@ class BinaryTree {
       
       return arr;
   }
-  
-  // Do not edit the lines below.
-  exports.BinaryTree = BinaryTree;
-  exports.findSuccessor = findSuccessor;
-  
+    
