@@ -1,21 +1,21 @@
 function taskAssignment(k, tasks) {
     let arr = [];
-        let sorted = [...tasks]; //1
-        let indexMap = {}; //2
+    let sorted = [...tasks]; //1
+    let indexMap = {}; //2
+    
+    sorted.sort((a,b) => a - b);
+    
+    for(let i = 0 ; i < tasks.length ; i++){ //3
+        if(!indexMap[tasks[i]]) indexMap[tasks[i]] = [];
         
-        sorted.sort((a,b) => a - b);
-        
-        for(let i = 0 ; i < tasks.length ; i++){ //3
-            if(!indexMap[tasks[i]]) indexMap[tasks[i]] = [];
-            
-            indexMap[tasks[i]].push(i);
-        }
-        
-        for(let i = 0, j = tasks.length - 1 ; i < j ; i++, j--){ //4
-            let a = sorted[i], b = sorted[j]; //4.1
-            let ai = indexMap[a].pop(), bi = indexMap[b].pop(); //4.2
-            arr.push([ai, bi]);
-        }
+        indexMap[tasks[i]].push(i);
+    }
+    
+    for(let i = 0, j = tasks.length - 1 ; i < j ; i++, j--){ //4
+        let a = sorted[i], b = sorted[j]; //4.1
+        let ai = indexMap[a].pop(), bi = indexMap[b].pop(); //4.2
+        arr.push([ai, bi]);
+    }
         
     return arr;
 }
