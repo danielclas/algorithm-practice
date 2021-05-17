@@ -32,8 +32,8 @@ function getNode(node, pos){ //3
  * the Nth and Kth node of a first linked list. Given this, our first
  * task is to find the previous node (which we'll call 'A') to our Nth, 
  * and our succesor node (which we'll call 'B') to our Kth. 
- * This way we can set the head node of list 2 as the next node of a,
- * and the b node as the next node of the tail node of list 2.
+ * This way we can set the head node of list 2 as the next node of A,
+ * and the B node as the next node of the tail node of list 2.
  * 
  * 1. We call our 'getNode' helper function to get our A node, which
  * will be one before the 'a' index passed in as input.
