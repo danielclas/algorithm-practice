@@ -1,11 +1,4 @@
-class LinkedList {
-    constructor(value) {
-        this.value = value;
-        this.next = null;
-    }
-}
-  
-/**
+ /**
  * Task: Write a function that takes in the head of
  * a Singly Linked List, reverses the list in place,
  * and returns its new head. 
