@@ -12,6 +12,3 @@ function minimumWaitingTime(queries) {
 	
   return sum;
 }
-
-// Do not edit the line below.
-exports.minimumWaitingTime = minimumWaitingTime;
