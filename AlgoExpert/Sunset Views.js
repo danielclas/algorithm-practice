@@ -20,6 +20,3 @@ function compare(stack, buildings, i){
 		stack.push(i);
 	}
 }
-
-// Do not edit the line below.
-exports.sunsetViews = sunsetViews;
