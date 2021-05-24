@@ -12,19 +12,24 @@ class LinkedList {
  * from which the loop originates in constant space.
  */
   
-//Solution 1, o(n) time and o(n) memory
 function findLoop(head) {	
     if(!head || !head.next) return head;
-    
-    let arr = [head];
+
+    let obj = {};
     let current = head;
-    
+
+    obj[current.value] = [current];
+
     while(current.next){
         let node = current.next;
-        if(arr.indexOf(node) != -1) return node;
-        arr.push(node);
+        
+        if(!obj[node.value]) obj[node.value] = [];	
+        if(obj[node.value].includes(node)) return node;		
+        
+        obj[node.value].push(node);
+        
         current = current.next;
     }
-    
+
     return null;	
 }
