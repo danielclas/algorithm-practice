@@ -39,7 +39,7 @@ var validateStackSequences = function(pushed, popped) {
  * This problem is asking us to determine whether the values in the
  * pushed and popped arrays are valid stack sequences or not. 
  * To be an invalid stack sequence would mean for example trying
- * to pop an element before it was pushed. In this case the order
+ * to pop an element before it could be pushed. In this case the order
  * of the values in the input arrays matters because, since we are
  * dealing with sequences, the indices on the arrays represent a point
  * in time, with the '1' index being posterior to the '0' index of
