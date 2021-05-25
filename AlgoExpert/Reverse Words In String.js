@@ -2,12 +2,12 @@ function reverseWordsInString(string) {
   
 	let words = getWords(string);
 	let sentence = [];
-	
+
 	for(let i = words.length - 1 ; i >= 0 ; i--){
 		sentence.push(words[i]);
 	}
-	
-  return sentence.join('');
+		
+	return sentence.join('');
 }
 
 function getWords(string){
@@ -33,6 +33,3 @@ function getWords(string){
 	
 	return words;
 }
-
-// Do not edit the line below.
-exports.reverseWordsInString = reverseWordsInString;

@@ -13,6 +13,3 @@ function minNumberOfCoinsForChange(n, denoms) {
 	
 	return arr[n] !== Infinity ? arr[n] : -1;		
 }
-
-// Do not edit the line below.
-exports.minNumberOfCoinsForChange = minNumberOfCoinsForChange;

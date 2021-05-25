@@ -29,6 +29,3 @@ function swap(array, i, j){
 	
 	return array;
 }
-
-// Do not edit the line below.
-exports.selectionSort = selectionSort;

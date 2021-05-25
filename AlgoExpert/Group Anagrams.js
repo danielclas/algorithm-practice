@@ -1,8 +1,7 @@
-function groupAnagrams(words) {
-	
+function groupAnagrams(words) {	
 	let track = {};
 	let arr = [];
-	
+
 	for(let i = 0 ; i < words.length ; i++){
 		if(track[i]) continue;
 		let arr2 = [words[i]];
@@ -17,16 +16,15 @@ function groupAnagrams(words) {
 		
 		arr.push(arr2);
 	}
-	
+
 	return arr;
 }
 
 function areAnagram(s1, s2){
-	//charCode - 97
 	let chars = Array(26).fill(0);
-	
+
 	if(s1.length != s2.length) return false;
-	
+
 	for(let i = 0 ; i < s1.length ; i++){
 		let ind1 = (""+s1[i]).charCodeAt(0) - 97;
 		let ind2 =  (""+s2[i]).charCodeAt(0) - 97;
@@ -34,9 +32,6 @@ function areAnagram(s1, s2){
 		chars[ind1]++;
 		chars[ind2]--;
 	}
-	
+
 	return !chars.some(c => c != 0);
 }
-
-// Do not edit the line below.
-exports.groupAnagrams = groupAnagrams;

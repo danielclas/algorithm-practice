@@ -17,9 +17,4 @@ function sortedSquaredArray(array) {
 	}
 	
 	return arr;
-	
-  //return array.map(b => b * b).sort((j,k) => j-k);
 }
-
-// Do not edit the line below.
-exports.sortedSquaredArray = sortedSquaredArray;

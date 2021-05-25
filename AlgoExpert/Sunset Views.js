@@ -3,15 +3,15 @@ function sunsetViews(buildings, direction) {
 	let isWest = direction == 'WEST';
 	let i = isWest ? 0 : buildings.length - 1;
 	let eval = () => isWest ? i < buildings.length : i >= 0;
-	
+
 	while(eval()){
 		compare(stack, buildings, i);
 		i += isWest ? 1 : -1;
 	}
-	
+
 	if(!isWest) stack.reverse();
-	
-  return stack;
+
+	return stack;
 }
 
 function compare(stack, buildings, i){
