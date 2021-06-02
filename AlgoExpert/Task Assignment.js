@@ -6,8 +6,7 @@ function taskAssignment(k, tasks) {
     sorted.sort((a,b) => a - b);
     
     for(let i = 0 ; i < tasks.length ; i++){ //3
-        if(!indexMap[tasks[i]]) indexMap[tasks[i]] = [];
-        
+        if(!indexMap[tasks[i]]) indexMap[tasks[i]] = [];        
         indexMap[tasks[i]].push(i);
     }
     
