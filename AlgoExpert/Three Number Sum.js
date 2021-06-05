@@ -74,7 +74,7 @@ function threeNumberSum(array, targetSum) {
  *   i  l          r
  *  [0, 4, 10, 15, 20], currentSum = 24, targetSum = 19
  * 
- * 7.  With that sum calculated, we asked if it equals the targetSum. If it does, we would
+ * 7.  With that sum calculated, we ask if it equals the targetSum. If it does, we would
  * simply add these three elements (array[i], array[left], array[right]) to our answer array.
  * After doing that, we need to make sure we advance left pointer one position to the right,
  * and left pointer one position to the left. Since we know all elements are distinct (this is
@@ -92,12 +92,13 @@ function threeNumberSum(array, targetSum) {
  * are looking for a greater currentSum, and thus we'd want a greater element to add to the sum.
  * So in this example from step 6, after step 8 and 9, our pointers would be placed like so:
 *   i  l        r  
- *  [0, 4, 10, 15, 20], currentSum = 24, targetSum = 19. Current sum is greater, so me moved right to the left.
+ *  [0, 4, 10, 15, 20], currentSum = 24, targetSum = 19. Current sum is greater, so me moved right to the left
+ * by one position.
  * 
  * Given that on the next iteration (step 6) this will evaluate to true, we do as expected on step 7.
  * On our next iteration, i would still be placed at 0, but we would have moved left and right on its
  * proper direction to continue checking if any sum including 0 (array[i]) adds up to targetSum.
- * After left has overlapped right, we simply continue with our outer for iteartion, placing i at 4 and
+ * After left has overlapped right, we simply continue with our outer for iteration, placing i at 4 and
  * starting from there again.
  * 
  * 10. Finally we return the populated array. We know this will be sorted, so we don't have to worry
