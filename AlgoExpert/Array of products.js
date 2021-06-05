@@ -98,7 +98,7 @@ function arrayOfProducts(array) {
  * to left and right array.
  * 
  * So, we ended up with arrays  left = [1, 5, 5, 20] and right = [8, 8, 2, 1].
- * This can be read as follows: array at left at i contains the product of every element
+ * This can be read as follows: array left at i contains the product of every element
  * to the left of input array at i. With our example array, left[3] contains
  * the product of input array at 0, 1 and 2 (5 * 1 * 4). The same goes for the right array,
  * but since we are coming from the right, it should be read on reverse. Right[0] contains
