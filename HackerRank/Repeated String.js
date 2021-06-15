@@ -7,6 +7,4 @@ function repeatedString(s, n) {
     if(mod === 0) return total;
     
     return total + ([...s].slice(0, mod).filter(c => c == 'a').length);
-    //s = abcac, n = 10
-
 }
