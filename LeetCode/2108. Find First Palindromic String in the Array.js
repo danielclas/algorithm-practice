@@ -3,7 +3,7 @@
  * @return {string}
  */
  var firstPalindrome = function(words) {
-    return words.find((word) => isPalindromic(word)) || '';
+    return words.find((word) => isPalindromic(word)) || '';
 };
 
 function isPalindromic(word){
